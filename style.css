@@ -59,7 +59,6 @@ body{
 	position: relative;
 	width:  calc(100% - 220px);
 	height: auto;
-	/*overflow: auto;*/
 	left:222px;
 }
 #logo{
@@ -82,7 +81,12 @@ body{
 	margin-left: -50px;
 	margin-top: -50px;
 	opacity: 1;
+	filter:alpha(opacity=100);  
+	transition:all .2s;
 	-webkit-transition:all .2s;
+	-wmoz-transition:all .2s;
+	-o-transition:all .2s;
+	-ms-transition:all .2s;
 }
 #nav .icon hr{
 	background-color: black;
@@ -92,7 +96,12 @@ body{
 }
 .nav{
 	opacity: 0;
+	filter:alpha(opacity=0);  
+	transition:all .3s;
 	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-o-transition:all .3s;
+	-ms-transition:all .3s;
 }
 .nav a{
 	color: rgba(0,0,0,0.9);
@@ -102,7 +111,11 @@ body{
 	top:-100px;
 	display: block;
 	position: relative;
+	transition:all .3s 0.1s;
 	-webkit-transition:all .3s 0.1s;
+	-o-transition:all .3s 0.1s;
+	-moz-transition:all .3s 0.1s;
+	-ms-transition:all .3s 0.1s;
 }
 .nav h1{
 	top:130px;
@@ -144,7 +157,11 @@ body{
 	position: relative;
 	top:490px;
 	display: block;
+	transition:all .3s 0.1s;
 	-webkit-transition:all .3s 0.1s;
+	-o-transition:all .3s 0.1s;
+	-moz-transition:all .3s 0.1s;
+	-ms-transition:all .3s 0.1s;
 }
 
 .nav nav ul li:hover{
@@ -153,9 +170,11 @@ body{
 
 #nav:hover .icon{
    opacity: 0;
+   filter:alpha(opacity=0);  
 }
 #nav:hover .nav{
 	opacity: 1;
+	filter:alpha(opacity=100);  
 }
 #nav:hover .blog{
 	top: 40px;
@@ -175,7 +194,11 @@ body{
 	margin-left: -50px;
 	margin-top: -50px;
 	opacity: 1;
+	transition:all .2s;
 	-webkit-transition:all .2s;
+	-wmoz-transition:all .2s;
+	-o-transition:all .2s;
+	-ms-transition:all .2s;
 }
 #desc .desc{
 	position: relative;
@@ -186,7 +209,12 @@ body{
 	margin-left: -150px;
 	margin-top: -250px;
 	opacity: 0;
+	filter:alpha(opacity=0);  
+	transition:all .3s;
 	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-o-transition:all .3s;
+	-ms-transition:all .3s;
 }
 #desc .desc p{
 	color: white;
@@ -215,9 +243,11 @@ body{
 
 #desc:hover .icon1{
 	opacity: 0;
+	filter:alpha(opacity=0);  
 }
 #desc:hover .desc{
 	opacity: 1;
+	filter:alpha(opacity=100);  
 }
 #menu img{
 	margin-left: 18px;
@@ -238,15 +268,12 @@ body{
     border-top: 1px solid #ddd;
     cursor: pointer;
 }
-
 #menu ul li:last-child{
 	border-bottom: 1px solid #ddd;
 }
-
 #menu ul li:hover{
 	background-color: #eee;
 }
-
 #content h2{
 	display: block;
 	position: absolute;
@@ -254,7 +281,6 @@ body{
 	margin:60px 20px 40px 30px;
 	
 }
-
 #content .content-work ul{
 	width: 950px;
 	height: auto;
@@ -263,7 +289,6 @@ body{
 	margin-left: -475px;
 	top:130px;
 }
-
 #content .content-work ul li{
 	position: relative;
 	width: 100%;
@@ -273,7 +298,6 @@ body{
 	border-radius: 5px;
 	border: 1px solid #fff;
 }
-
 #content .content-work ul li img{
 	width:380px;
 	height: 270px;
@@ -297,7 +321,6 @@ body{
 #content .content-work ul li:hover{
     border: 1px solid #ddd;
 }
-
 #content .work{
 	width: 560px;
 	position: absolute;
@@ -326,7 +349,11 @@ body{
 	left:-260px;
 	top:270px;
 	border-radius: 3px;
+	transition:all .3s;
 	-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	-o-transition:all .3s;
+	-ms-transition:all .3s;
 	
 }
 #content .content-work ul li:hover .view{
@@ -368,10 +395,7 @@ body{
 	width: 100%;
 	height: 600px;
 	position: relative;
-/*	top:200px;*/
 	z-index: 1;
-	/*background: #fff;*/
-	
 }
 
 #about-me .skill{
@@ -384,8 +408,7 @@ body{
 	position: relative;
 	padding: 10px;
 	margin-top: 20px;
-	margin-bottom: 20px;
-	
+	margin-bottom: 20px;	
 }
 .skill p{
 	position: relative;
@@ -431,8 +454,6 @@ body{
 .skill ul li:last-child{
 	border-bottom: 1px solid #ccc;
 }
-
-
 #about-me .others{
 	position: relative;
 	top:570px;
@@ -468,7 +489,6 @@ body{
 	color: #aaa;
 	font-size: 14px;
 	margin-top: 10px;
-	/*margin-left:20px;*/
 }
 
 #contact-me{
