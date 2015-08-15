@@ -122,14 +122,9 @@ body{
 	position: absolute;
     left:10%;
     font-size: 48px;
-    -webkit-font-family: WebFont;
 }
 .nav h1 span{
 	color: #ccc;
-}
-@font-face{
-	font-family: WebFont;
-	src:url(xingshu.ttf);
 }
 .nav nav{
 	position: relative;
