@@ -119,7 +119,7 @@ body{
 }
 .nav h1{
 	top:130px;
-	position: absolute;
+	position: relative;
     left:10%;
     font-size: 48px;
 }
