@@ -120,7 +120,7 @@ body{
 .nav h1{
 	top:130px;
 	position: relative;
-    left:10%;
+    left:5%;
     font-size: 48px;
 }
 .nav h1 span{
@@ -175,7 +175,7 @@ body{
 	top: 40px;
 }
 #nav:hover .github{
-	top: 450px;
+	top: 350px;
 }
 
 #desc .icon1{
