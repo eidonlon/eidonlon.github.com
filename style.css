@@ -1,0 +1,506 @@
+ /* 去掉默认样式*/
+* {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul {list-style: none;}
+body{
+	font-family: "楷体";
+	font-size: 20px;
+}
+/*总体结构*/
+#wrap{
+	height: auto;
+	width: 100%;
+	position: relative;
+	overflow:hidden;
+}
+#face{
+	position: relative;
+	background-image: url(images/bg1.jpg);
+	background-size: 100% 100%;
+}
+#face #nav{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	z-index: 10;
+	text-align: center;
+}
+#face #desc{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	right: 0;
+	top:0;
+	background: rgba(0,0,0,0.95);
+}
+#main{
+	border-top: 1px solid #ccc;
+    height: auto;
+    width: 100%;
+}
+#menu{
+	width: 220px;
+	position: fixed;
+	border-right: 1px solid #ccc;
+	top:0;
+	left: 0;
+	z-index: 9;
+	text-align: center;
+}
+
+#content{
+	position: relative;
+	width:  calc(100% - 220px);
+	height: auto;
+	/*overflow: auto;*/
+	left:222px;
+}
+#logo{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-top: -75px;
+	margin-left: -100px;
+	z-index: 99;
+}
+
+/*细节布局*/
+
+#nav .icon{
+	position: absolute;
+	width:100px;
+	height: 100px;
+	left:50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	opacity: 1;
+	-webkit-transition:all .2s;
+}
+#nav .icon hr{
+	background-color: black;
+	width: 50px;
+	height: 5px;
+	margin-top: 5px;
+}
+.nav{
+	opacity: 0;
+	-webkit-transition:all .3s;
+}
+.nav a{
+	color: rgba(0,0,0,0.9);
+	text-decoration: none;
+}
+.nav .blog{
+	top:-100px;
+	display: block;
+	position: relative;
+	-webkit-transition:all .3s 0.1s;
+}
+.nav h1{
+	top:130px;
+	position: absolute;
+    left:10%;
+    font-size: 48px;
+    font-family: WebFont;
+}
+.nav h1 span{
+	color: #ccc;
+}
+@font-face{
+	font-family: WebFont;
+	src:url(xingshu.ttf);
+}
+.nav nav{
+	position: relative;
+	top:250px;
+    font-family: "幼圆";
+    font-size: 18px;
+    z-index: 10;
+}
+.nav nav ul{text-align: center;}
+.nav nav ul li{
+	position: relative;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    border-top:1px solid #ddd;
+}
+.nav nav ul li:last-child{
+	border-bottom:1px solid #ddd;
+}
+.nav .github{
+	position: relative;
+	top:490px;
+	display: block;
+	-webkit-transition:all .3s 0.1s;
+}
+
+.nav nav ul li:hover{
+	background-color: #eee;
+}
+
+#nav:hover .icon{
+   opacity: 0;
+}
+#nav:hover .nav{
+	opacity: 1;
+}
+#nav:hover .blog{
+	top: 40px;
+}
+#nav:hover .github{
+	top: 450px;
+}
+
+
+
+#desc .icon1{
+	position: relative;
+	width:100px;
+	height: 100px;
+	left:50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	opacity: 1;
+	-webkit-transition:all .2s;
+}
+#desc .desc{
+	position: relative;
+	width:300px;
+	height: 400px;
+	left:50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -250px;
+	opacity: 0;
+	-webkit-transition:all .3s;
+}
+#desc .desc p{
+	color: white;
+    font-size: 16px;
+    margin-left: 30px;
+    text-indent: 30px;
+    line-height: 30px;
+}
+#desc .desc input{
+	width: 160px;
+	height: 40px;
+	position: relative;
+    background-color: rgb(255,255,255);
+    margin-top: 30%;
+    margin-left: 20%;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+    border:0;
+}
+
+#desc .desc input:hover{
+	background-color: #ddd;
+}
+
+#desc:hover .icon1{
+	opacity: 0;
+}
+#desc:hover .desc{
+	opacity: 1;
+}
+#menu img{
+	margin-left: 18px;
+}
+#menu ul{
+	width: 100%;
+	height: auto;
+	position: relative;
+	top:150px;
+}
+
+#menu ul li{
+	list-style: none;
+	height: 55px;
+	line-height: 55px;
+	font-size: 18px;
+	font-family: "幼圆";
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#menu ul li:last-child{
+	border-bottom: 1px solid #ddd;
+}
+
+#menu ul li:hover{
+	background-color: #eee;
+}
+
+#content h2{
+	display: block;
+	position: absolute;
+	font-size: 36px;
+	margin:60px 20px 40px 30px;
+	
+}
+
+#content .content-work ul{
+	width: 950px;
+	height: auto;
+	position: relative;
+	left: 50%;
+	margin-left: -475px;
+	top:130px;
+}
+
+#content .content-work ul li{
+	position: relative;
+	width: 100%;
+	height: 270px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid #fff;
+}
+
+#content .content-work ul li img{
+	width:380px;
+	height: 270px;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+#content .shade{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 380px;
+	height: 270px;
+	background: rgba(255,255,255,0.2);
+}
+#content .shade a{
+	display: block;
+	width: 380px;
+	height: 270px;
+}
+#content .content-work ul li:hover{
+    border: 1px solid #ddd;
+}
+
+#content .work{
+	width: 560px;
+	position: absolute;
+	left: 385px;
+	top:0;
+	height: 270px;
+	word-wrap:break-word;
+}
+.work .work-desc{
+	display: block;
+	height: 270px;
+	position: relative;
+	top:30px;
+	left:30px;
+	margin-right: 20px;
+	line-height: 30px;
+}
+.work .view{
+	display: block;
+	width: 130px;
+	height: 40px;
+	background:#fff;
+	position: absolute;
+	line-height: 40px;
+	text-align: center;
+	left:-260px;
+	top:270px;
+	border-radius: 3px;
+	-webkit-transition:all .3s;
+	
+}
+#content .content-work ul li:hover .view{
+	top:110px;
+}
+#content .content-work ul li:hover .shade{
+	background: rgba(0,0,0,0.2);
+}
+#about-me{
+	width: 950px;
+	height: auto;
+	position: relative;
+	top:140px;
+	left:50%;
+	margin-left: -475px;
+}
+
+#about-me .info{
+	position: relative;
+	top:130px;
+	width: 100%;
+	height: auto;
+	background: white;
+}
+
+.info p{
+	text-indent: 20px;
+	display: inline-block;
+	padding: 30px;
+	position: relative;
+	width: 600px;
+	line-height: 30px;
+	
+}
+.info p span{
+	color: #ccc;
+}
+#tianc{   /* 填充空间*/
+	width: 100%;
+	height: 600px;
+	position: relative;
+/*	top:200px;*/
+	z-index: 1;
+	/*background: #fff;*/
+	
+}
+
+#about-me .skill{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	top:160px;
+}
+.skill h3{
+	position: relative;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+.skill p{
+	position: relative;
+	margin-left: 10px;
+	height: 140px;
+	width: 500px;
+	line-height: 40px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-indent: 30px;
+}
+.skill p span{
+	margin-left: 130px;
+}
+#content .skill ul{
+	position: relative;
+	height: auto;
+	top:0;
+}
+
+.skill ul li{
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #ccc;
+	text-indent: 30px;
+	width: 400px;
+}
+.skill ul .one{
+	background-image: url(images/star_02.jpg);
+	background-repeat: no-repeat;
+	background-position:50% 60%;
+}
+.skill ul .two{
+	background-image: url(images/star_06.jpg);
+	background-repeat: no-repeat;
+	background-position:50% 60%;
+}
+.skill ul .three{
+	background-image: url(images/star_04.jpg);
+	background-repeat: no-repeat;
+	background-position:50% 60%;
+}
+.skill ul li:last-child{
+	border-bottom: 1px solid #ccc;
+}
+
+
+#about-me .others{
+	position: relative;
+	top:570px;
+	width: 100%;
+	height: 200px;
+	z-index: 2;
+}
+.others h3{
+	position: relative;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+.others ul{
+	width:950px;
+	height: 150px;
+	position: relative;
+	
+}
+
+.others ul li a{
+   display: block;
+   width: 200px;
+   height:auto;
+   float: left;
+   margin-right: 35px;
+   text-indent: 30px;
+   line-height: 25px;
+}
+.others ul li a span{
+	display: inline-block;
+	color: #aaa;
+	font-size: 14px;
+	margin-top: 10px;
+	/*margin-left:20px;*/
+}
+
+#contact-me{
+	top:120px;
+	width: 950px;
+	height: 200px;
+	position: relative;
+	left: 50%;
+	margin-left: -475px;
+}
+#contact-me p{
+	font-size: 40px;
+	font-weight: bold;
+}
+#contact-me .email{
+	position: relative;
+	top:30px;
+	font-size: 26px;
+	text-align: center;
+}
+#contact-me .email a{
+	color: blue;
+}
+
+footer{
+	position: relative;
+	top:70px;
+	width: 100%;
+	height: 140px;
+	background: rgba(0,0,0,0.9);
+	color: #ccc;
+	padding: 20px;
+	line-height: 30px;
+	border-radius: 5px;
+}
