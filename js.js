@@ -49,6 +49,17 @@ function move(){
             }
     	}(i);
     }
+
+    for(var i=1;i<aLi0.length;i++){
+        aLi0[i].onclick=function(num){
+            return moveTo=function(){
+                scrollToPosition(positions[num]);
+            }
+        }(i-1);
+    }
+    aLi0[0].onclick=function(){
+       scrollToPosition(0);
+    }
   
 }
 
@@ -58,7 +69,6 @@ window.onscroll=function(){
     var oAboutMe=g("about-me");
     var oContactMe=g("contact-me");
 	var top = document.body.scrollTop ;
-     console.log(top);
 
     if(top>oMyWorks.offsetTop-200&&top<oAboutMe.offsetTop){
     	for(var i=0;i<aLi0.length;i++){
