@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<title>个人简历</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(document).ready(function() {
+	$.fn.fullpage({
+		slidesColor: ['#78a99b', '#689fa0', '#7BAABE', '#99899e', '#b99da1'],
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+		navigation:true,
+		afterLoad: function(anchorLink, index){
+			if(index == 2){
+				$('.section2').find('p').delay(500).animate({
+					left: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 3){
+				$('.section3').find('p').delay(500).animate({
+					bottom: '0'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 4){
+				$('.section4').find('p').fadeIn(2000);
+			}
+			if(index == 5){
+				$('.section5').find('p').fadeIn(2000);
+			}
+		},
+		onLeave: function(index, direction){
+			if(index == '2'){
+				$('.section2').find('p').delay(500).animate({
+					left: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '3'){
+				$('.section3').find('p').delay(500).animate({
+					bottom: '-120%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == '4'){
+				// $('.section4').find('p').fadeOut(2000);
+			}
+			if(index == '5'){
+				$('.section5').find('p').fadeOut(2000);
+			}
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div class="section section1">
+	<h3 class="first-title">首页</h3>
+	<div class="section-box first-box">
+		<div  class="picture"><img src="images/picture.jpg"></div>
+		<p>真奇怪，苦难就像天气一样，能使牛奶变酸，却使苹果变甜</p>
+		<hr class="section01-line">
+		<p>我叫张玉丹</p>
+		<p>一名前端开发工程师</p>
+		<p>1067935093@qq.com</p>
+	</div>
+</div>
+<div class="section section2">
+	<h3>关于我</h3>
+	<div class="section-box second-box">
+		<div><span class="age"><i></i></span><p class="desc">年龄/25</p></div>
+		<div><span class="education"><i></i></span><p class="desc">学历/本科</p></div>
+		<div><span class="location"><i></i></span><p class="desc">现居/深圳</p></div>
+		<div><span class="status"><i></i></span><p class="desc">籍贯/陕西</p></div>
+		<div><span class="status"><i></i></span><p class="desc">状态/求职</p></div>
+		<hr class="section01-line">
+		<p>一年全职前端开发经验</p>
+		<p>熟悉MV*开发，熟悉模块化开发</p>
+		<p>熟练响应式布局</p>
+		<p>较强的自学能力，分析解决问题的能力较强</p>
+		<p>轻微强迫症，注重用户体验</p>
+		<p>GitHub:<a href="https://github.com/eidonlon">https://github.com/eidonlon</a></p>
+	</div>
+</div>
+<div class="section section3">
+	<h3>工作经历</h3>
+	<div class="section-box third-box">
+	<h4>平安科技(深圳)有限公司</h4>
+	<p>2016年7月~2017年7月7号</p>
+	<p>任职：web前端开发工程师</p>
+	<p>1.渠道联盟项目组</p>
+	<ul>
+		<li>渠道联盟后台管理系统的开发</li>
+		<li>DSP 广告平台的开发</li>
+		<li>移动端活动页面的开发</li>
+	</ul>
+	<p>2.团金E项目组</p>
+	<ul>
+		<li>负责团金E 营销支持平台的前端开发</li>
+		<li>根据业务需求设计合适的工程项目</li>
+		<li>根据组件化、模块化思路进行开发</li>
+		<li>兼容IE8 及以上浏览器</li>
+	</ul>
+	</div>
+</div>
+<div class="section section4">
+	<h3>技能</h3>
+	<ul class="skills">
+        <li class="" style="background-color:rgba(121,100,102,0.8)" >html5</li><li class="" style="background-color:rgba(49,65,82,0.8)">css3</li><li class="" style="background-color:rgba(76,157,160,0.8)" >javascript</li><li class="" style="background-color:rgba(66,66,66,0.8)" >vue2</li><li class="" style="background-color:rgba(193,131,106,0.8)" >git</li><li class="" style="background-color:rgba(117,148,179,0.8)" >nodejs</li><li class="" style="background-color:rgba(71,83,94,0.8)" >less</li><li class="" style="background-color:rgba(147,147,189,0.8)" >webpack</li>
+    </ul>
+</div>
+<div class="section section5">
+	<h3>线上作品</h3>
+	<div class="section-box fourth-box">
+		<div class="demo demo01">
+			<h4>H5 app</h4>
+			<p>用vue＋webpack + node仿制的One[一个 ]app,用express 搭建的后台，除了图文、阅读、音乐页面的列表是读取的本地json文件外，首页以及其他详情数据都是用爬虫爬取</p>
+			
+			<span>扫码查看效果
+				<img src="https://imitateone-ailidan.rhcloud.com/static/images/link.png">
+			或者 <a href="https://imitateone-ailidan.rhcloud.com/#/">点击这里</a></span>
+		</div>
+		<div class="demo demo02" style="display: none">
+			<h4>node+express+mysql搭建的blog网站</h4>
+			<p>网站部署在openshift上,由登陆、后台发布文章、文章展示三部分组成,,支持markdown语法，外接友言评论系统。</p>
+			<div class="link"><a href="http://eidolons-ailidan.rhcloud.com/">在线效果查看</a></div>
+		</div>
+		<div class="demo demo03" style="display: none">
+			<h4>音乐可视化</h4>
+			<p>用web audio api 操作音频，对其分析，再结合canvas画图，将音频效果以图形的形式展示出来,非原创，看教程学习再加上自己的扩展。后台使用express,部署在openshift,打开略速度慢实属正常。</p>
+	        <div class="link"><a href="http://musicview-ailidan.rhcloud.com/">在线效果查看</a></div>
+		</div>
+		<!-- <div class="demo demo04">
+			<p>早期demo[2015年]</p>
+		</div> -->
+	</div>
+</div>
+</body>
+</html>

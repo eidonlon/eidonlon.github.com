@@ -1,0 +1,200 @@
+span,i{
+   display: inline-block;
+}
+.section-box div{
+   display: inline-block;
+}
+h3{
+   position: absolute;
+   top: 30px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+p {
+    line-height: 22px;
+      margin: 10px 0;
+}
+.section-box i{
+   width: 28px;
+    height: 28px;
+    margin-top:8px;
+}
+/*.second-box{
+    margin-right: -20px;
+}*/
+.age i{
+    background: url(../images/age.png);
+    background-size: 100% 100%;
+}
+.status i{
+    background: url(../images/status.png);
+    background-size: 100% 100%;
+}
+.education i{
+    background: url(../images/education.png);
+    background-size: 100% 100%;
+}
+.location i{
+    background: url(../images/location.png);
+    background-size: 100% 100%;
+}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+.sections{
+   padding: 0 50px;
+}
+.section2 p { position: relative; left: -120%;}
+.section3 p { position: relative; bottom: -120%;}
+.section-box span{
+   margin:0;
+}
+.section01-line{
+    width: 80%;
+    background: #ddd;
+}
+.desc{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.demo img{
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+   h3{
+   		font-size:17px; 
+   		color:#fff;
+   }
+   p,span,em,li{
+		font-size: 15px;
+    line-height: 22px;
+    margin: 5px 0;
+   }
+   .picture img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+   }
+   .first-box{
+    padding:0 20px;
+   }
+   #fullPage-nav{
+   	display: none;
+   }
+   .age,.education,.location,.status{
+       width: 44px;
+       border: 1px solid #ddd;
+       height: 44px;
+       border-radius: 50%;
+       background: rgba(115, 156, 181, 0.67);
+   }
+   h4{
+      font-size: 16px;
+      color: #8c5c49;
+      margin: 10px;
+      text-align: center;
+   }
+   .third-box{
+       background: #fff;
+       width: 80%;
+       border-radius: 10px;
+       color:#333;
+       padding: 10px;
+       text-align: left;
+   }
+   .third-box p,.third-box li{
+     font-size: 14px;
+     margin:5px 0;
+   }
+   .third-box ul{
+        padding-left: 20px;
+   }
+   .fourth-box{
+    padding:0 20px;
+    position: relative;
+   }
+   .demo{
+      background: #fff;
+      color: #333;
+      font-size: 13px;
+      padding:10px;
+      border-radius: 10px;
+   }
+   .demo01 img{
+     width:200px;
+     display:block;
+     height: 200px; 
+     margin:0 auto;
+   }
+   .demo p{
+      font-size: 13px;
+      text-align: left;
+   }
+   .link{
+    border:1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: #88a2a9;
+   }
+  .link a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#fff;
+    cursor: pointer;
+  }
+   .demo02{
+      min-height: 300px;
+   }
+
+   .skills div{
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      display: inline-block;
+   }
+   .skills div span{
+      margin: 0 auto;
+      width: 50px;
+      height: 50px;
+      vertical-align: middle;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      line-height: 50px;
+      font-size: 12px;
+   }
+   .skills .small span{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+   }
+}
+
+@media only screen and (min-width: 768px) {
+   h3{
+   		font-size:21px; 
+   		color:green;
+   }
+   p{
+		font-size: 17px;
+   }
+}
+@media only screen and (min-width: 980px) {
+   h3{
+   		font-size:24px; 
+   		color:blue;
+   }
+   p{
+		font-size: 19px;
+   }
+}
+@media only screen and (min-width: 1200px) {
+   h3{
+   		font-size:26px; 
+   		color:yellow;
+   }
+   p{
+		  font-size: 21px;
+   }
+}
